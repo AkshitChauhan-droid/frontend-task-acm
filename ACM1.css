@@ -144,3 +144,27 @@ span{margin-left: 26px;
 #last {
     margin-bottom:100px ;
 }
+
+/* comments editing begins */
+.comm{
+    margin-left: 320px;
+    margin-bottom: 80px;
+}
+#button1, #button2, #button3, #button4{
+
+    background-color:purple;
+   color:white;
+   border: none;
+   border-radius: 30px;
+   padding: 8px 16px;
+   font-size: 10px;
+   margin:20px 0px 0px;
+
+}
+#button1:hover, #button2:hover, #button3:hover, #button4:hover{
+    box-shadow: 0.5px 0.5px 0.5px black;
+   cursor: pointer;
+transform: translate(1px,-1px);
+ transition-duration: 0.25s;   
+
+}
