@@ -4,13 +4,15 @@ body {
     overflow-x: hidden;
     font-family: 'Open Sans', sans-serif;
 }
+a{ all: unset;}
 h1{
     text-align: center;
 }
 /* general body edits end */
  .background_img{
+     width: 100vw;
      margin: 0;
-     height: 770px;
+     height: 108vh;
     background-image:url(pexels-pixabay-33545.jpg) ;
     background-position: center;
     display: flex;
@@ -22,41 +24,66 @@ h1{
     /* the whole taskbar as a flexbox */
     display: flex;
     background-color: #ffffff;
-    margin-top: 50px ;
-    margin-left: 90px ;
-    margin-right: 90px ;
-    height: 110px;
+    margin-top: 10vh ;
+    margin-left: 8vw ;
+    margin-right: 8vw ;
+    height: 15vh;
     width: 100%;
     flex-direction: row;
     justify-content: space-evenly;
 }
+
+
+/* mobile nav starts*/
+.mobile_nav_links{
+    display: none;
+}
+#mobile_current{
+    
+    color: hotpink;
+}
+.mobile_nav{
+    margin: auto;
+    display: none;
+}
+.line{
+    background-color: rgb(143, 119, 230);
+    width: 15px;
+    height: 2px;
+    margin-top: 2px;
+    display: none;
+}
+/* mobile nav ends */
+
+
 .logo{
     /* the logo div */
 flex-grow: 0.6;
 }
 .logo img{
     /* the svg logo edits */
-    width : 160px;
-    padding-top: 40px;
-    padding-left: 15px;
+    width : 12vw;
+    padding-top: 6vh;
+    padding-left: 2vw;
 }
 .tabs{
     /* these are the tabs settings i.e reviews/dashboard etc */
-    padding: 45px 5px;
+    padding: 6vh 1.5vw;
     color:#9400D3 ;
+    text-align: center;
 }
 #current{
     /* it refres to the current tabs selected which is "reviews */
     background-color: #E0E0E0;
     flex-grow: 0.05;
-    padding-left: 40px;
     color: #000010;
 }
 .tabs:hover{
     /* basic effects  */
     cursor: pointer;
     color: #000010;
-    transform: translate(3px);
+    transform: translate(0.5vw);
+    transition: all 0.1s;
 
 }
 /* Now the css related to review has begun */
@@ -66,90 +93,138 @@ flex-grow: 0.6;
     justify-content: space-evenly;
     flex-direction: column;
     position: relative;
-    top: -100px;
+    top: -15vh;
     background-color: #D6DBDF; 
-    margin-left: 200px;
-    margin-right: 200px;
+    margin-left: 13vw;
+    margin-right: 13vw;
     
 }
 .reviews{
     /* this is editing all the flexboxes inside the container as they are given same class*/
     background-color: white;
     
-    margin-right: 100px ;
-    margin-left: 100px;
+    margin-right: 6.5vw ;
+    margin-left: 6.5vw;
+    border: 4px;
+    border-style: outset;
+    border-color: rgb(223, 221, 221);
+    box-shadow: 5px 5px 15px rgb(68, 68, 68);
+    
 }
 /* position adjustments of reviews begin */
 #rev1 {position: relative;
-    top: -100px;}
+    top: -14vh;
+    }
 #rev3{ position: relative;
-top: 100px;}
+top: 14vh;}
 #rev4{ position: relative;
-top: 200px;}
+top: 28vh;}
 /* position adjustments of reviews end */
 .photu{
     /* this is the editing of the photos of the user that commented on the post  */
     border-radius: 50%;
-    border: 2px solid white;
+    border: 0.15em solid white;
+    width: 6.5vw;
     width: 100px;
     height: 5.5em;
-    position: relative;
-    right: -400px;
-    top: -35px
+    margin:auto;
+    margin-top: -5vh;
+    display: block;
 }
 p{
     /* this aligns the name and the date of the post */
     text-align: center;
     margin-top: 0px ;
     margin-bottom: 0px;
+    
 }
 b{
     color: #551A8B;
 }
-.reviews_text{
+/* expanding texts begins*/
+.reviews1_text, .reviews2_text,.reviews3_text,.reviews4_text {
     /* this aligns the text written by people as reviews */
-    margin-left: 150px;
-    margin-right: 150px;
-    margin-top: 25px;
-    margin-bottom:100px ;
-
+    margin-left: 19%;
+    margin-right: 19%;
+    margin-top: 3.5vh;
+    margin-bottom:14vh ;
+    background: -webkit-linear-gradient(#333,#eee );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    cursor: pointer;
 }
+    
+
+
+.reviews1l_text, .reviews2l_text,.reviews3l_text,.reviews4l_text{
+    display: none;
+    margin-left: 19%;
+    margin-right: 19%;
+    margin-top: 3.5vh;
+    margin-bottom:14vh ;
+    cursor: pointer;
+}
+.hide{ display: none;}
+.show{
+    display: block;
+}
+
+
+/* expanding texts ends */
+
 .like{
-    /* this aligns the like/stars  */
-    margin-left: 300px;
-    margin-right: 300px;
+    
+    margin:auto;
+    width: 280px;
+    border: 0.05em solid rgb(224, 215, 215);
+    padding: 0.8em 0.8em;
 }
 
 /* icons css start */
 #thumbsup{
-    color:  blue;
-    font-size: 26px;
+    color: blue;
+    /* font-size: 1.8em; */
+    font-size: 140%;
 }
 .far{
     color: grey;
-    font-size: 26px;
+    /* font-size: 1.8em; */
+    font-size: 140%;
 }
 .fas{color:yellow;
-    font-size: 26px;
+    /* font-size: 1.8em; */
+    font-size: 140%;
 }
 #thumbsdown{
     color: red;
-    font-size: 26px;
+    /* font-size: 1.8em; */
+    font-size: 140%;
 }
-span{margin-left: 26px;
+span{margin-left: 1.8em;
+    border-left: o.05f;
     
 
 }
+.rating_number{
+    display: inline-block;
+    margin: auto;
+    padding: auto;
+    margin-left: 0.5em;
+}
 /* icons css end */
 #last {
-    margin-bottom:100px ;
+    margin-bottom:14vh ;
+    
 }
+
 
 /* comments editing begins */
 .comm{
-    margin-left: 320px;
-    margin-bottom: 80px;
+    width: 280px;
+    margin:auto;
+    margin-bottom: 11.2vh;
 }
+
 #button1, #button2, #button3, #button4{
 
     background-color:purple;
@@ -166,5 +241,86 @@ span{margin-left: 26px;
    cursor: pointer;
 transform: translate(1px,-1px);
  transition-duration: 0.25s;   
+
+}
+#comments1, #comments2, #comments3, #comments4{
+    display: flex;
+    margin-top: 20px;
+}
+
+/* media queries start */
+@media (max-width: 670px){
+    .taskbar{
+        margin: 0;
+        width: 100%;
+
+    }
+    /* nav editing starts */
+    .mobile_nav_links {position: absolute;
+        left: 0;
+        height: 60vh;
+        top: 13vh;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 40%;
+        background-color: rgb(253, 209, 209);
+        transform: translateX(-100%);
+        transition: transform 0.5s ease-out;
+    }
+    .mobile-active{
+        transform: translateX(0%);
+    }
+    .mobile_nav_links li{
+        /* opacity: 0; */
+list-style-type: none;
+text-align: center;
+    }
+
+    .mobile_nav{
+        display: block;
+        margin-left : 10vw;
+        margin-right: 4vw;
+        cursor: pointer;
+    }
+    .line{ display: block;}
+    .logo{ align-items: center;
+        flex-grow:1;
+       
+
+    }
+    .logo img{
+        width:40vw;
+    }
+    .tabs{
+        display: none;
+        flex-shrink: 0;
+    }
+
+
+
+
+/* nav editing ends */
+    .reviews_container{
+        /* this is the flex container of all the reviews */
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        position: relative;
+        top: -15vh;
+        background-color: #D6DBDf; 
+        margin-left: 0;
+        margin-right: 0;}
+        .reviews{
+            /* this is editing all the flexboxes inside the container as they are given same class*/
+            background-color:white;
+            border: none;
+            box-shadow: 20px black;
+            margin-right: 0;
+            margin-left:0;
+        }  
+        
+              
 
 }
