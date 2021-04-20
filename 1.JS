@@ -1,6 +1,7 @@
 //js
 // catch
-const postCommentButton1 = document.getElementById("button1");
+document.addEventListener("DOMContentLoaded", function(event) { 
+    const postCommentButton1 = document.getElementById("button1");
 const textInput1 = document.getElementById("input1");
 
 const comments1 = document.getElementById("comments1")
@@ -14,6 +15,9 @@ postCommentButton1.addEventListener("click", function() {
     comments1.append(p);
     textInput1.value = "";
 })
+    //here your code
+  });
+
 
 
 
