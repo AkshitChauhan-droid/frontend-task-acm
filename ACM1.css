@@ -276,6 +276,7 @@ transform: translate(1px,-1px);
         /* opacity: 0; */
 list-style-type: none;
 text-align: center;
+margin-right: 12vw;
     }
 
     .mobile_nav{
@@ -296,6 +297,7 @@ text-align: center;
     .tabs{
         display: none;
         flex-shrink: 0;
+      
     }
 
 
